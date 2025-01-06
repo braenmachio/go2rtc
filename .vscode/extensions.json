@@ -1,0 +1,10 @@
+
+{
+  "recommendations": [
+    "golang.go", // Go language support
+    "ms-vscode.cpptools", // C/C++ support
+    "eamodio.gitlens", // GitLens for Git supercharged
+    "esbenp.prettier-vscode", // Prettier for code formatting
+    "dbaeumer.vscode-eslint" // ESLint for JavaScript/TypeScript linting
+  ]
+}
