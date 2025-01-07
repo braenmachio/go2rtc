@@ -1,0 +1,12 @@
+version: '3'
+services:
+  go2rtc:
+    build: 
+      context: ..
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./go2rtc.yaml:/config/go2rtc.yaml
+    ports:
+      - "8554:8554"
+      - "8555:8555"
+      - "1984:1984"

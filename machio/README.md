@@ -83,5 +83,11 @@ For detailed insights, check the video: [Frigate & go2rtc](https://youtu.be/PYMI
 - **Integration with go2rtc:** 
   - Centralizes RTSP management and simplifies the existing stream handling logic.
 
-## License
-This project is licensed under the MIT License.
+### go2rtc logs
+~~~
+12:30:48.096 PM	info	go2rtc version=1.9.8 platform=linux/amd64 revision=mod.2a4a9e2
+12:30:48.096 PM	info	config path=/config/go2rtc.yaml
+12:30:48.099 PM	info	[rtsp] listen addr=:8554
+12:30:48.100 PM	info	[webrtc] listen addr=:8555/tcp
+12:30:48.100 PM	info	[api] listen addr=:1984
+~~~

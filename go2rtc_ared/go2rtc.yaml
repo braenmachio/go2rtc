@@ -1,0 +1,10 @@
+rtsp:
+  listen: ":8554"
+
+streams:
+  # Define your streams here
+  obs-stream:
+    # we need not to specify an input stream source here
+    # input: "rtsp://localhost:8554/obs-stream" 
+  camera1:
+    input: "your-input-stream-source" # we will include the camera input
