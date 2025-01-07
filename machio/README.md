@@ -91,3 +91,39 @@ For detailed insights, check the video: [Frigate & go2rtc](https://youtu.be/PYMI
 12:30:48.100 PM	info	[webrtc] listen addr=:8555/tcp
 12:30:48.100 PM	info	[api] listen addr=:1984
 ~~~
+
+rtsp://your-server-ip:8554/obs-stream
+
+## Installing the Latest Go on EC2
+
+1. **Update the package index:**
+   ```sh
+   sudo apt update
+   ```
+
+2. **Download the latest Go binary:**
+   - Visit the [official Go downloads page](https://golang.org/dl/) to find the latest version.
+   - Use `wget` to download the tarball. For example, to download Go 1.18:
+     ```sh
+     wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
+     ```
+
+3. **Extract the tarball:**
+   ```sh
+   sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+   ```
+
+4. **Set up the Go environment:**
+   - Add the Go binary to your PATH by editing your profile file (`~/.profile`, `~/.bashrc`, or `~/.zshrc`):
+     ```sh
+     echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
+     ```
+   - Reload the profile:
+     ```sh
+     source ~/.profile
+     ```
+
+5. **Verify the installation:**
+   ```sh
+   go version
+   ```
