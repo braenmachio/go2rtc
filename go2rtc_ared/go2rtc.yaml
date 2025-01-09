@@ -1,5 +1,9 @@
+log:
+  level: debug
+
 rtsp:
   listen: ":8554"
+  backlog: 128  # Increase the backlog to handle more connections
 
 streams:
-  obs-stream: "rtsp://:8554/obs-stream"  # removed the 0.0.0.0
+  live: "rtsp://54.93.76.250:8554/live"  # Replace <EC2_PUBLIC_IP> with your EC2 instance's public IP address

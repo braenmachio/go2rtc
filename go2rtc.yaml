@@ -1,7 +1,2 @@
 streams:
-  obs-stream:
-    url: "rtsp://3.121.74.19:8554/obs-stream"
-    // ...additional configuration...
-rtsp:
-  listen: ":8554"
-  // ...additional configuration...
+  webcam: rtsp://0.0.0.0:8554/webcam

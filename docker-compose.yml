@@ -1,0 +1,15 @@
+services:
+  go2rtc:
+    image: alexxit/go2rtc:master
+    container_name: go2rtc
+    network_mode: host  # Add this line
+    ports:
+      - "8554:8554"
+      - "8555:8555"
+      - "1984:1984"
+      - "1935:1935"
+    volumes:
+      - ./go2rtc.yaml:/config/go2rtc.yaml
+    restart: unless-stopped  # Add this for automatic restart
+volumes:
+  go2rtc_data:

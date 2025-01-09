@@ -7,5 +7,8 @@ services:
       - ./go2rtc.yaml:/config/go2rtc.yaml
     ports:
       - "8554:8554"
-      - "8555:8555"
+      - "8555:8555/udp"
       - "1984:1984"
+      - "1935:1935"
+volumes:
+  go2rtc_data:
